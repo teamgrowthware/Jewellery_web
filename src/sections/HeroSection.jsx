@@ -38,12 +38,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 gap-y-4"
+          className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 gap-y-4 w-full"
         >
-          <a href="#collection" className="bg-gold hover:bg-gold-light text-dark font-sans font-semibold uppercase tracking-wider text-sm px-10 py-5 transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] block text-center">
+          <a href="#collection" className="bg-gold hover:bg-gold-light text-dark font-sans font-semibold uppercase tracking-wider text-sm px-10 py-5 transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] block text-center w-full sm:w-auto">
             Explore Collection
           </a>
-          <a href="#gallery" className="bg-transparent border border-white/50 hover:border-gold text-white hover:text-gold font-sans font-semibold uppercase tracking-wider text-sm px-10 py-5 transition-all duration-300 block text-center">
+          <a href="#gallery" className="bg-transparent border border-white/50 hover:border-gold text-white hover:text-gold font-sans font-semibold uppercase tracking-wider text-sm px-10 py-5 transition-all duration-300 block text-center w-full sm:w-auto">
             View Gallery
           </a>
         </motion.div>

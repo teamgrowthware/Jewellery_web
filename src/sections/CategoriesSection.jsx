@@ -50,7 +50,7 @@ const CategoriesSection = () => {
           subtitle="Explore our collections designed to elevate every occasion."
         />
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 grid-rows-none md:grid-rows-3 gap-4 lg:gap-6 h-[1000px] md:h-[800px]">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 md:grid-rows-3 gap-4 lg:gap-6 h-auto md:h-[800px]">
           {categories.map((category, index) => (
             <motion.a
               href="#collection"
@@ -59,7 +59,7 @@ const CategoriesSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative group overflow-hidden rounded-md cursor-pointer ${category.colSpan} ${category.rowSpan} h-48 md:h-auto`}
+              className={`relative group overflow-hidden rounded-md cursor-pointer ${category.colSpan} ${category.rowSpan} h-64 md:h-auto`}
             >
               <img
                 src={category.image}
